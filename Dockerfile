@@ -9,5 +9,3 @@ RUN npm i && npm run build
 FROM nginx:stable-alpine
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /usr/src/app/dist/mean-course /usr/share/nginx/html
-##check
-#check2
